@@ -1,0 +1,45 @@
+---
+import { MenuButton } from "./MenuButton";
+---
+
+<header
+  class="flex w-screen relative bg-primary text-white h-20 items-center justify-between px-40 before:bg-gradient-to-r before:from-black before:to-secondary"
+>
+  <h1
+    class="text-2xl font-bold bg-gradient-to-t from-cyan-900 to-white bg-clip-text text-transparent"
+  >
+    SAMUEL MONTES
+  </h1>
+  <nav>
+    <ul class="flex justify-end items-center gap-12">
+      <li
+        class="hover:text-contrast text-xl transition-colors duration-[100ms] text-principalText"
+      >
+        <a href="">Home</a>
+      </li>
+      <li
+        class="hover:text-contrast text-xl transition-colors duration-[100ms] text-principalText"
+      >
+        <a href="">About</a>
+      </li>
+      <li
+        class="hover:text-contrast text-xl transition-colors duration-[100ms] text-principalText"
+      >
+        <a href="">Contact</a>
+      </li>
+    </ul>
+  </nav>
+  <MenuButton client:visible />
+</header>
+
+<style>
+  header::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    content: "";
+    width: 100%;
+  }
+</style>

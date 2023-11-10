@@ -1,0 +1,19 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ImageMain from "../components/Home/ImageMain.astro"
+import HomeMain from "../components/Home/HomeMain.astro"
+---
+
+<Layout title="Home">
+	<main class="flex justify-between items-center bg-primaryGradient px-40">
+		<HomeMain/>
+		<ImageMain/>
+	</main>
+</Layout>
+
+
+<style>
+	main {
+		height: calc(100vh - 5rem);
+	}
+</style>

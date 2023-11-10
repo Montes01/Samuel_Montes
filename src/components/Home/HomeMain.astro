@@ -1,0 +1,21 @@
+---
+import { FIRST_MESSAGE } from "./../../Constants/Consts";
+import Icon from "../General/Icon.astro";
+---
+
+<main class="flex justify-center flex-col items-start gap-12 w-1/2">
+  <p class="max-w-[50ch] text-2xl leading-relaxed font-semibold text-white">
+    {FIRST_MESSAGE}
+  </p>
+  <section class="flex justify-start gap-7">
+	<Icon image="/Icons/linkedin.png" to="#"/>
+	<Icon image="/Icons/github.png" to="#"/>
+	<Icon image="/Icons/whatsapp.png" to="#"/>
+  </section>
+</main>
+
+<style>
+  main {
+    height: calc(100vh - 5rem);
+  }
+</style>
