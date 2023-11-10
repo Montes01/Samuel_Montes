@@ -2,10 +2,11 @@
 interface Props {
   image: string;
   to: string;
+  className?:string
 }
-const { image, to } = Astro.props;
+const { image, to,className } = Astro.props;
 ---
 
-<a class="rounded-minimum hover:scale-125 transition-transform w-12 h-12" href={to}>
+<a class={"rounded-minimum hover:scale-125 transition-transform w-12 h-12 " + className} href={to}>
   <img class="h-full w-full object-cover rounded-minimum" src={image} alt="" />
 </a>

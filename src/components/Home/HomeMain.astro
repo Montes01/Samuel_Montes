@@ -3,14 +3,14 @@ import { FIRST_MESSAGE } from "./../../Constants/Consts";
 import Icon from "../General/Icon.astro";
 ---
 
-<main class="flex justify-center flex-col items-start gap-12 w-1/2">
+<main class="flex justify-center z-[1] flex-col items-start gap-12 w-1/2">
   <p class="max-w-[50ch] text-2xl leading-relaxed font-semibold text-white">
     {FIRST_MESSAGE}
   </p>
   <section class="flex justify-start gap-7">
-	<Icon image="/Icons/linkedin.png" to="#"/>
-	<Icon image="/Icons/github.png" to="#"/>
-	<Icon image="/Icons/whatsapp.png" to="#"/>
+    <Icon image="/Icons/linkedin.png" to="#"/>
+    <Icon image="/Icons/github.png" to="#" className="invert"/>
+    <Icon image="/Icons/whatsapp.png" to="https://wa.me/3124115302"/>
   </section>
 </main>
 

@@ -20,8 +20,18 @@ const { title } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{makeTitle(title)}</title>
   </head>
-  <body>
+  <body class="bg-primaryGradient flex items-center flex-col justify-start">
     <Header />
-    <slot />
+    <div/>
+    <slot class="flex items-start justify-start" />
   </body>
 </html>
+
+<style>
+  div {
+  width: 10px;
+  height: 10px;
+  box-shadow: 0 0 50px white;
+  border-radius: 50%;
+  } 
+</style>
